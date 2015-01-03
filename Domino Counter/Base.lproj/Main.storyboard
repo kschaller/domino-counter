@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,204 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXM-2T-KEz">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="136"/>
+                                <color key="backgroundColor" red="0.074509803921568626" green="0.51764705882352935" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="B4a-5N-upd"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234567890" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOl-O0-VRK">
+                                <rect key="frame" x="16" y="40" width="568" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="xkK-kB-0vY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="72"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLw-qU-Ndq">
+                                <rect key="frame" x="30" y="152" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="ryH-8N-eUA"/>
+                                    <constraint firstAttribute="width" constant="75" id="yGd-DY-FWr"/>
+                                </constraints>
+                                <state key="normal" image="DieFive">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dominoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQt-TD-Y3I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hd-W2-Scu">
+                                <rect key="frame" x="495" y="152" width="75" height="75"/>
+                                <state key="normal" image="DieFive">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dominoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gxt-zC-3Jz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apL-sn-aIg">
+                                <rect key="frame" x="42" y="234" width="75" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="4">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dominoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YEy-M0-rVv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bd4-qM-dZf">
+                                <rect key="frame" x="125" y="234" width="75" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="5">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dominoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i7V-o6-WgE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDO-Og-eCC">
+                                <rect key="frame" x="208" y="234" width="75" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="6">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dominoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HPu-wK-ZHK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GL8-34-TWB">
+                                <rect key="frame" x="42" y="317" width="75" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="7">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dominoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Axx-ie-bea"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcL-tf-moF">
+                                <rect key="frame" x="125" y="317" width="75" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="8">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dominoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZsR-B3-kHk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eQ-fn-6oY">
+                                <rect key="frame" x="208" y="317" width="75" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="9">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dominoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OCc-BU-0vG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQg-Cv-7Jo">
+                                <rect key="frame" x="42" y="400" width="75" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="10">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dominoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aCW-JS-FnH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARq-2h-qQF">
+                                <rect key="frame" x="125" y="400" width="75" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="11">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dominoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hEi-zO-5Z7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhP-bJ-U7w">
+                                <rect key="frame" x="208" y="400" width="75" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="12">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dominoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QSz-1I-vIZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffB-md-7t6">
+                                <rect key="frame" x="42" y="483" width="75" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="13">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dominoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yqj-bi-f8d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZb-lx-Rqn">
+                                <rect key="frame" x="125" y="483" width="75" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="14">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dominoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cMZ-ay-lFL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTm-Mo-f1h">
+                                <rect key="frame" x="208" y="483" width="75" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="15">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dominoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fTm-Um-zun"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sd-gd-L9f">
+                                <rect key="frame" x="262" y="152" width="75" height="75"/>
+                                <state key="normal" image="DieFive">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dominoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p22-e1-aVi"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bLw-qU-Ndq" firstAttribute="width" secondItem="2Hd-W2-Scu" secondAttribute="width" id="3MD-Dx-YNd"/>
+                            <constraint firstItem="tXM-2T-KEz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5E2-Gu-O8l"/>
+                            <constraint firstItem="1sd-gd-L9f" firstAttribute="centerY" secondItem="bLw-qU-Ndq" secondAttribute="centerY" id="6tz-yY-OEJ"/>
+                            <constraint firstItem="bLw-qU-Ndq" firstAttribute="height" secondItem="2Hd-W2-Scu" secondAttribute="height" id="DPU-lV-n9W"/>
+                            <constraint firstItem="bLw-qU-Ndq" firstAttribute="centerY" secondItem="2Hd-W2-Scu" secondAttribute="centerY" id="EOb-xb-hFa"/>
+                            <constraint firstItem="qOl-O0-VRK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="FSP-nT-j2N"/>
+                            <constraint firstAttribute="trailing" secondItem="qOl-O0-VRK" secondAttribute="trailing" constant="16" id="Flq-dA-BHD"/>
+                            <constraint firstAttribute="centerX" secondItem="1sd-gd-L9f" secondAttribute="centerX" id="G34-fj-3ZY"/>
+                            <constraint firstItem="1sd-gd-L9f" firstAttribute="width" secondItem="bLw-qU-Ndq" secondAttribute="width" id="Odc-MB-1Ep"/>
+                            <constraint firstAttribute="trailing" secondItem="tXM-2T-KEz" secondAttribute="trailing" id="SA7-5x-ttb"/>
+                            <constraint firstAttribute="trailing" secondItem="2Hd-W2-Scu" secondAttribute="trailing" constant="30" id="ZFA-9c-gcP"/>
+                            <constraint firstItem="bLw-qU-Ndq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="pMq-QZ-9oc"/>
+                            <constraint firstItem="qOl-O0-VRK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="rVR-Nq-MzV"/>
+                            <constraint firstItem="tXM-2T-KEz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vGz-bl-THG"/>
+                            <constraint firstItem="bLw-qU-Ndq" firstAttribute="top" secondItem="tXM-2T-KEz" secondAttribute="bottom" constant="16" id="viX-hT-fYu"/>
+                            <constraint firstItem="1sd-gd-L9f" firstAttribute="height" secondItem="bLw-qU-Ndq" secondAttribute="height" id="yCL-hC-APF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="totalLabel" destination="qOl-O0-VRK" id="9At-X3-A8c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="DieFive" width="75" height="75"/>
+    </resources>
 </document>

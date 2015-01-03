@@ -10,18 +10,29 @@
 
 @interface ViewController ()
 
+@property NSInteger total;
+
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (void)dominoButtonTapped:(id)sender {
+    UIButton *dominoButton = (UIButton *)sender;
+    NSInteger value = dominoButton.tag;
+    self.total += value;
+    [self updateTotalLabel];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)updateTotalLabel {
+    self.totalLabel.text = [NSString stringWithFormat:@"%zi", self.total];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    // Initialize the total to 0.
+    self.total = 0;
+    [self updateTotalLabel];
 }
 
 @end
