@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DieButton.h"
 
 @interface ViewController ()
 
@@ -29,7 +30,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     // Initialize the total to 0.
     self.total = 0;
     [self updateTotalLabel];
